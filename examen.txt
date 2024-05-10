@@ -1,0 +1,18 @@
+docker run -d -p 8080:80 docker/getting-started
+
+
+https://hub.docker.com/r/bitnami/moodle
+
+
+docker network create moodle-network
+
+curl -sSL https://raw.githubusercontent.com/bitnami/containers/main/bitnami/moodle/docker-compose.yml > docker-compose.yml
+
+docker-compose up -d
+
+
+
+PARA CLONAR: 
+git clone https://github.com/bitnami/containers.git
+cd bitnami/APP/VERSION/OPERATING-SYSTEM
+docker build -t bitnami/APP:latest .
